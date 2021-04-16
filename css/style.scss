@@ -1,0 +1,104 @@
+.outer-circle{
+  border-radius:50%;
+  border: 10px solid;
+  width: 500px;
+  height: 500px;
+  background-color: #385a94;
+margin: auto;
+margin-top: 60px;
+box-shadow: 8px 8px 15px 5px #888888;
+position: relative;
+}
+.top-left{
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 250px 0 0 0;
+  background-color: darkgreen;
+  margin: -250px 0 0 -250px;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  border: 5px solid;
+}
+.top-right{
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 250px 0 0;
+  background-color: red;
+  margin: -250px -250px 0 0;
+  top: 50%;
+  right: 50%;
+  box-sizing: border-box;
+  border: 5px solid;
+}
+.bottom-left{
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 0 0 250px ;
+  background-color: goldenrod;
+  margin: 0 0 -250px -250px;
+  bottom: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  border: 5px solid;
+}
+
+.bottom-right{
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 0 250px 0;
+  background-color: darkBlue;
+  margin: 0 -250px -250px 0;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  border: 5px solid;
+}
+.inner-circle{
+  background-color: #888888;
+  position: absolute;
+  border: 10px solid;
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.Game-title{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.buttons{
+  margin: 1rem 0;
+  .buttons-container{
+    margin-left: 3rem;
+  }  button{
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+  }
+}
+.labels{
+  margin: .2rem 0;
+  label{
+    margin: 0 1.5rem;
+  }
+}
+.light{
+  width: 40px;
+  height: 20px;
+  background-color: rgb(48, 18, 18);
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}
